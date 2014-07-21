@@ -2,4 +2,3 @@ Pattern==2.6
 tweepy==2.3.0
 sqlalchemy==0.9.6
 psycopg2==2.4.5
-ipython==2.1.0
