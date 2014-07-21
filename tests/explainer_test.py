@@ -25,3 +25,8 @@ class ExplainerTest(TestCase):
         tweet = 'i cannot explain how beautiful i am'
         objects = explainer.get_objects(tweet, ['explain'])
         self.assertEqual(list(objects), [])
+
+    def test_my(self):
+        tweet = 'idk how to explain my feels towards you'
+        objects = explainer.get_objects(tweet, ['explain'])
+        self.assertNotIn('my', list(objects))

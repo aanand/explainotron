@@ -78,4 +78,6 @@ def accept_noun_phrase(chunk):
         return False
     if chunk.words[-1].string.lower() in ['i']:
         return False
+    if len(chunk.words) == 1 and chunk.words[0].type[0] != 'N':
+        return False
     return True
